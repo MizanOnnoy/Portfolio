@@ -1,0 +1,438 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+h1{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+p{
+    text-align: center;
+}
+
+.navbar{
+    text-align: center;
+    color: white;
+    background-color: steelblue;
+    padding: 1% 7%;
+
+}
+
+.nav-logo{
+    width: 70px;
+    height: 150px;
+    border-radius: 50%;   
+}
+.nav-heading{
+    margin: 0;
+    margin-top: 10px;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.nav-menu a{
+    background-color: slategray;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 10px;
+}
+.nav-menu a:hover{
+    background-color: greenyellow;
+    color: #000;
+    
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+    width: 100%;
+    height: auto;   
+}
+.navbar::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+@media screen and (min-width:768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.nav-logo{
+    text-align: left;
+    width: 80px;
+    height: 120px;
+   
+}
+.nav-heading h1{
+    text-align: right;
+}
+.nav-menu{
+    flex-direction: row;
+    position: relative;
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+.nav-menu a{
+    padding-left: 30px;
+    padding-top: 20px;
+    background-color: transparent;
+    text-align: center;
+}
+.about{
+    background-color: teal;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    
+}
+.about-img img{
+    border: 5px solid white;
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin-left: 0px;
+}
+}
+
+
+
+main{
+    background-color:whitesmoke;
+    padding: 130px 10px;
+    text-align: center;
+    position: relative;
+}
+main img{
+    height: 100px;
+    width: auto;
+    }
+.right-img{
+    position: absolute;
+    right: 60px;
+    top:20px;
+    transition: transform 2s;
+}
+.right-img:hover{
+    transform: rotate(360deg);
+}
+.description h1{
+    font-family: 'satisfy', cursive;
+    font-size: 3rem;
+}
+.description p{
+    font-family: serif, cursive;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.left-img{
+    position: absolute;
+    left: 60px;
+    bottom:20px;
+    transition: transform 2s;
+}
+.left-img:hover{
+    transform: rotate(360deg);
+}
+main::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+.about{
+    background-color: teal;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    align-items: center;
+}
+.about-img img{
+    border: 5px solid white;
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+}
+.hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto; 
+    width: 70px;
+}
+.cv-btn{
+    background-color: skyblue;
+    color:black;
+    border: none;
+    border-radius: 15px;
+    padding:15px;
+    font-size: 2.3rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+.cv-btn:hover{
+    background-color: rgb(18, 18, 99);
+}
+.about::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+.work{
+    padding: 1% 0%;
+}
+.card{
+    background-color: slateblue;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.6s;
+    height: 650px;
+    color:white;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 5px yellowgreen;
+}
+.card-icon{
+    text-align: center;
+    
+}
+.card-icon img{
+    height: 100px;
+    width: auto;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px 10px;
+}
+.card-title h1{
+    text-align: center;
+    padding: 6px;
+    background-color:rgb(19, 17, 17);
+    border-radius: 10px;
+}
+
+
+.working-card{
+    background-color: slategray;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.6s;
+    height: 650px;
+    color:white;
+}
+
+.working-card:hover{
+    box-shadow: 0 4px 8px 5px blueviolet;
+}
+
+.skills-card{
+    background-color: slateblue;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.6s;
+    height: 650px;
+    color:white;
+}
+.skills-card:hover{
+    box-shadow: 0 4px 8px 5px yellow;
+}
+    .scard-description li{
+        list-style-type:none;
+        margin: 35px 0;
+        font-weight:bolder ;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .scard-description li::before{
+        content: '';
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        background-color: gray;
+        width: 100%;
+        height: 20px;
+        border-radius: 1000px; 
+    }
+    .scard-description li::after{
+        content: '';
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        background-color:green;
+        width: 0;
+        height: 20px;
+        border-radius: 1000px;
+        
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: forward;
+    }
+    .scard-description li.html::after{
+        animation-name: html;
+    }
+    @keyframes html{
+        to{
+            width: 90%;
+        }
+    }
+    .scard-description li.css::after{
+        animation-name: css;
+    }
+    @keyframes css{
+        to{
+            width: 80%;
+        }
+    }
+    .scard-description li.js::after{
+        animation-name:js ;
+    }
+    @keyframes js{
+        to{
+            width: 70%;
+        }
+    }
+    .scard-description li.boots::after{
+        animation-name: boots;
+    }
+    @keyframes boots{
+        to{
+            width: 85%;
+        }
+    }
+    .scard-description li.react::after{
+        animation-name: react;
+    }
+    @keyframes react{
+        to{
+            width: 75%;
+        }
+    }
+    .scard-description li.node::after{
+        animation-name: node;
+    }
+    
+    @keyframes node{
+        to{
+            width: 60%;
+        }
+    }
+    .scard-description li.express::after{
+        animation-name: express;
+    }
+    @keyframes express{
+        to{
+            width: 50%;
+        }
+    }
+
+    .work::after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+.contacts{
+    padding:1% 7%;
+    background-color: aqua;
+    color: rgb(90, 7, 7);
+}
+.contacts h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.contact{
+    text-align: center;
+    
+}
+.contact input, textarea{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.contact button{
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+    width: 100px;
+}
+.contact button:hover{
+    background-color: tomato;
+}
+.contact-links{
+    text-align: center;
+}
+.media-btn button{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+}
+.media-btn button:hover{
+    background-color: gainsboro;
+}
+.contacts::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin:0 auto;
+}
+.footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: turquoise;
+    margin: 20px;
+}
+.footer a:hover{
+    color: tomato;
+}
+.footer p{
+    margin-top: 20px;
+}
